@@ -1,0 +1,4 @@
+() | Title | Artist | Year | Type | Style | Rating | Action
+(*) | 'Heroes' | Bowie, David | 1977 | Album | Pop | 5 | Delete
+() | Help! | Beatles, The | 1965 | Album | Pop | 5 | Delete
+() | Presence | Led Zeppelin | 1976 | Album | Pop | 4 | Delete
