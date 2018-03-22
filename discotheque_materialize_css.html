@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Discotheque</title>
+<link rel="stylesheet" href="discotheque_responsive.css">
+</head>
+
+<body>
+	<header>
+		<h1>Franky's discotheque</h1>
+	</header>
+	<nav>
+		<ul class="menu">
+			<li><a href="#">Disc options</a></li>
+			<li><a href="#">Artist options</a></li>
+			<li><a href="#">Type options</a></li>
+			<li><a href="#">Style options</a></li>
+		</ul>
+	</nav>
+	<div class="add-disc">
+		<form action="traitement" method="post">
+			<!-- Title field -->
+			<label for="title">Title</label> <input placeholder="Low" id="title"
+				type="text" name="title">
+			<!-- Artist field -->
+			<label>Artist</label> <select>
+				<option value="" disabled selected>Choose artist</option>
+				<option value="1">Bowie, David</option>
+				<option value="2">Beatles, The</option>
+			</select> <label>Year</label> <select>
+				<option value="" disabled selected>Choose year</option>
+				<option value="1">1962</option>
+				<option value="2">1963</option>
+				<option value="3">1964</option>
+				<option value="4">1965</option>
+				<option value="5">1966</option>
+				<option value="6">1967</option>
+				<option value="7">1968</option>
+				<option value="8">1969</option>
+				<option value="9">1970</option>
+				<option value="10">1971</option>
+				<option value="11">1972</option>
+				<option value="12">1973</option>
+				<option value="13">1974</option>
+				<option value="14">1975</option>
+				<option value="15">1976</option>
+				<option value="16">1977</option>
+				<option value="17">1978</option>
+				<option value="18">1979</option>
+				<option value="19">1980</option>
+			</select> <label>Type</label> <select>
+				<option value="" disabled selected>Choose type</option>
+				<option value="1">Album</option>
+				<option value="2">Single & EP</option>
+				<option value="3">Compilation</option>
+				<option value="4">Oher</option>
+			</select> <label>Style</label> <select>
+				<option value="" disabled selected>Choose style</option>
+				<option value="1">Blues</option>
+				<option value="2">Folk</option>
+				<option value="3">Rock & Roll</option>
+				<option value="4">Pop</option>
+				<option value="5">Reggae</option>
+				<option value="6">Soul</option>
+				<option value="7">Other</option>
+			</select> <label>Rating</label> <select>
+				<option value="" disabled selected>Choose rating</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+			<!-- Submit button -->
+			<button type="submit">Add</button>
+		</form>
+		<!--   <p class="add-artist">Add a new disc</p> -->
+	</div>
+	<div>
+		<table class=".list-discs">
+			<tr>
+				<th></th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filter">Title</label> <input placeholder="Filter"
+							id="filter" type="text" name="filtertitle">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filter">Artist</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filter">Year</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filter">Type</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filter">Style</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filter">Rating</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
+					</form>
+				</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td><form>
+						<INPUT type="radio" name="selectdisc" checked>
+					</form></td>
+				<td>'Heroes'</td>
+				<td>Bowie, David</td>
+				<td>1977</td>
+				<td>Album</td>
+				<td>Pop</td>
+				<td>5</td>
+				<td><a href="#">Delete</a><br /> <a href="#">Update</a></td>
+			</tr>
+			<tr>
+				<td><form>
+						<INPUT type="radio" name="selectdisc">
+					</form></td>
+				<td>Help!</td>
+				<td>Beatles, The</td>
+				<td>1965</td>
+				<td>Album</td>
+				<td>Pop</td>
+				<td>5</td>
+				<td><a href="#">Delete</a><br /> <a href="#">Update</a></td>
+			</tr>
+			<tr>
+				<td><form>
+						<INPUT type="radio" name="selectdisc">
+					</form></td>
+				<td>Presence</td>
+				<td>Led Zeppelin</td>
+				<td>1976</td>
+				<td>Album</td>
+				<td>Rock & Roll</td>
+				<td>4</td>
+				<td><a href="#">Delete</a><br /> <a href="#">Update</a></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+<footer>
+	<p align="center">
+		<a href="#">About us</a> <a href="#">Contact us</a> <a href="#">Facebook</a>
+		<a href="#">Twitter</a>
+	</p>
+</footer>
+
+</html>
