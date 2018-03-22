@@ -3,6 +3,7 @@
 h1 {
 	text-align: center;
 	font-weight: bold;
+	color: white;
 }
 
 header {
@@ -10,10 +11,9 @@ header {
 	flex-direction: column;
 	justify-content: flex-end;
 	background-image: url("./images/franckyvincent.jpg");
-  background-size: contain;
-  background-position: center;
-  height: 200px;
-	color: white;
+	background-size: contain;
+	background-position: center;
+	height: 200px;
 }
 
 nav {
@@ -21,10 +21,9 @@ nav {
 	background-color: lightcyan;
 	margin: auto;
 	padding: 1px;
-
 }
 
-ul#menu_inline li {
+.menu li {
 	display: inline;
 	padding: 0 0.5em; /* Pour espacer les boutons entre eux */
 }
@@ -41,7 +40,7 @@ ul#menu_inline li {
 .list-discs {
 	padding: 10px 5px;
 	margin: auto;
-	width: 100%;	
+	width: 100%;
 }
 
 table, td, th {
@@ -50,4 +49,17 @@ table, td, th {
 	border-collapse: collapse;
 	background-color: beige;
 	margin: auto;
+}
+
+@media all and (max-width: 1024px) {
+	
+	header {
+		display: none;
+	}
+	
+	h1 {
+		text-align: center;
+		font-weight: bold;
+		color: red;
+	}
 }

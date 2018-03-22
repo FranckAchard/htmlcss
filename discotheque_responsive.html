@@ -2,17 +2,17 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Discotheque</title>
-	<link rel="stylesheet" href="discotheque.css">
+<meta charset="utf-8">
+<title>Discotheque</title>
+<link rel="stylesheet" href="discotheque_responsive.css">
 </head>
 
 <body>
 	<header>
-		<h1> Franky's discotheque</h1>
+		<h1>Franky's discotheque</h1>
 	</header>
 	<nav>
-		<ul id="menu_inline">
+		<ul class="menu">
 			<li><a href="#">Disc options</a></li>
 			<li><a href="#">Artist options</a></li>
 			<li><a href="#">Type options</a></li>
@@ -23,7 +23,7 @@
 		<form action="traitement" method="post">
 			<!-- Title field -->
 			<label for="title">Title</label> <input placeholder="Low" id="title"
-			type="text" name="title">
+				type="text" name="title">
 			<!-- Artist field -->
 			<label>Artist</label> <select>
 				<option value="" disabled selected>Choose artist</option>
@@ -84,71 +84,77 @@
 				<th></th>
 				<th>
 					<form action="traitement" method="post">
-						<label for="filter">Title</label> <input placeholder="Filter" id="filter"
-						type="text" name="filtertitle">
+						<label for="filter">Title</label> <input placeholder="Filter"
+							id="filter" type="text" name="filtertitle">
 					</form>
 				</th>
 				<th>
 					<form action="traitement" method="post">
-						<label for="filter">Artist</label> <input placeholder="Filter" id="filter"
-						type="text" name="filter">
+						<label for="filter">Artist</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
 					</form>
 				</th>
 				<th>
 					<form action="traitement" method="post">
-						<label for="filter">Year</label> <input placeholder="Filter" id="filter"
-						type="text" name="filter">
+						<label for="filter">Year</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
 					</form>
 				</th>
 				<th>
 					<form action="traitement" method="post">
-						<label for="filter">Type</label> <input placeholder="Filter" id="filter"
-						type="text" name="filter">
+						<label for="filter">Type</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
 					</form>
 				</th>
 				<th>
 					<form action="traitement" method="post">
-						<label for="filter">Style</label> <input placeholder="Filter" id="filter"
-						type="text" name="filter">
+						<label for="filter">Style</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
 					</form>
 				</th>
 				<th>
 					<form action="traitement" method="post">
-						<label for="filter">Rating</label> <input placeholder="Filter" id="filter"
-						type="text" name="filter">
+						<label for="filter">Rating</label> <input placeholder="Filter"
+							id="filter" type="text" name="filter">
 					</form>
 				</th>
 				<th>Action</th>
 			</tr>
 			<tr>
-				<td><form><INPUT type= "radio" name="selectdisc" checked></form></td>
+				<td><form>
+						<INPUT type="radio" name="selectdisc" checked>
+					</form></td>
 				<td>'Heroes'</td>
 				<td>Bowie, David</td>
 				<td>1977</td>
 				<td>Album</td>
 				<td>Pop</td>
 				<td>5</td>
-				<td><a href="#">Delete</a><br /><a href="#">Update</a></td>
+				<td><a href="#">Delete</a><br /> <a href="#">Update</a></td>
 			</tr>
 			<tr>
-				<td><form><INPUT type= "radio" name="selectdisc"></form></td>
+				<td><form>
+						<INPUT type="radio" name="selectdisc">
+					</form></td>
 				<td>Help!</td>
 				<td>Beatles, The</td>
 				<td>1965</td>
 				<td>Album</td>
 				<td>Pop</td>
 				<td>5</td>
-				<td><a href="#">Delete</a><br /><a href="#">Update</a></td>
+				<td><a href="#">Delete</a><br /> <a href="#">Update</a></td>
 			</tr>
 			<tr>
-				<td><form><INPUT type= "radio" name="selectdisc"></form></td>
+				<td><form>
+						<INPUT type="radio" name="selectdisc">
+					</form></td>
 				<td>Presence</td>
 				<td>Led Zeppelin</td>
 				<td>1976</td>
 				<td>Album</td>
 				<td>Rock & Roll</td>
 				<td>4</td>
-				<td><a href="#">Delete</a><br /><a href="#">Update</a></td>
+				<td><a href="#">Delete</a><br /> <a href="#">Update</a></td>
 			</tr>
 		</table>
 	</div>
