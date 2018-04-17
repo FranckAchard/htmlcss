@@ -50,45 +50,28 @@ function addDiscLine(pDisc) {
     const newLine= document.createElement("tr");
 
     // create 1st row (radio button) and append to line
-    let row= document.createElement("td");
-
-    newLine.appendChild(row);
+    addRadioButtonTD(newLine);
 
     // create 2nd row (title) and append to line
     addTextContentTD(pDisc.title, newLine);
-    /*row= document.createElement("td");
-    row.textContent= pDisc.title;
-    newLine.appendChild(row);*/
 
     // create 3rd row (artist) and append to line
-    row= document.createElement("td");
-    row.textContent= pDisc.artist;
-    newLine.appendChild(row);
+    addTextContentTD(pDisc.artist, newLine);
 
     // create 4th row (year) and append to line
-    row= document.createElement("td");
-    row.textContent= pDisc.year;
-    newLine.appendChild(row);
+    addTextContentTD(pDisc.year, newLine);
 
     // create 5th row (type) and append to line
-    row= document.createElement("td");
-    row.textContent= pDisc.type;
-    newLine.appendChild(row);
+    addTextContentTD(pDisc.type, newLine);
 
     // create 6th row (style) and append to line
-    row= document.createElement("td");
-    row.textContent= pDisc.style;
-    newLine.appendChild(row);
+    addTextContentTD(pDisc.style, newLine);
 
     // create 7th row (rating) and append to line
-    row= document.createElement("td");
-    row.textContent= pDisc.rating;
-    newLine.appendChild(row);
+    addTextContentTD(pDisc.rating, newLine);
 
     // create 8th row (action) and append to line
-    row= document.createElement("td");
-
-    newLine.appendChild(row);
+    addActionTD(newLine);
 
     // add line to table
     discTable.appendChild(newLine);
@@ -110,8 +93,33 @@ function addDiscLine(pDisc) {
                 */
 }
 
-function addTextContentTD(pContent, pLine) {
-    let row= document.createElement("td");
-    row.textContent= pContent;
+function addRadioButtonTD(pLine) {
+    // create row
+    const row= document.createElement("td");
+    // create form
+    const form= document.createElement("form");
+    // create input
+    const input= document.createElement("input");
+    // set input attributes
+    input.type= "radio";
+    input.name= "selectdisc";
+    // append input to form
+    form.appendChild(input);
+    // append form to row
+    row.appendChild(form);
+    // append row to line
     pLine.appendChild(row);
+}
+
+function addTextContentTD(pContent, pLine) {
+    // create row
+    const row= document.createElement("td");
+    // set text content of row
+    row.textContent= pContent;
+    // append row to line
+    pLine.appendChild(row);
+}
+
+function addActionTD(pLine) {
+
 }
