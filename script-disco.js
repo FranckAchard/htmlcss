@@ -3,8 +3,8 @@ const addbButton = document.getElementById("add-disc");
 // cancel submit
 addbButton.addEventListener("click", function(event) {
     event.preventDefault();
-    const newDisc= getNewDisc();
-    addDiscLine(newDisc);
+    //const newDisc= getNewDisc();
+    addDiscLine(getNewDisc());
 });
 
 // disc object
@@ -76,50 +76,52 @@ function addDiscLine(pDisc) {
     // add line to table
     discTable.appendChild(newLine);
 
-    /*
- 			<tr>
-				<td><form>
-						<INPUT type="radio" name="selectdisc">
-					</form></td>
-				<td>Help!</td>
-				<td>Beatles, The</td>
-				<td>1965</td>
-				<td>Album</td>
-				<td>Pop</td>
-				<td>5</td>
-				<td><a href="#">Delete</a><br />
-				<a href="#">Update</a></td>
-			</tr>
-                */
 }
 
 function addRadioButtonTD(pLine) {
     // create row
-    const row= document.createElement("td");
+    const row1= document.createElement("td");
     // create form
-    const form= document.createElement("form");
+    const form1= document.createElement("form");
     // create input
-    const input= document.createElement("input");
+    const input1= document.createElement("input");
     // set input attributes
-    input.type= "radio";
-    input.name= "selectdisc";
+    input1.type= "radio";
+    input1.name= "selectdisc";
     // append input to form
-    form.appendChild(input);
+    form1.appendChild(input1);
     // append form to row
-    row.appendChild(form);
+    row1.appendChild(form1);
     // append row to line
-    pLine.appendChild(row);
+    pLine.appendChild(row1);
 }
 
 function addTextContentTD(pContent, pLine) {
     // create row
-    const row= document.createElement("td");
+    const row1= document.createElement("td");
     // set text content of row
-    row.textContent= pContent;
+    row1.textContent= pContent;
     // append row to line
-    pLine.appendChild(row);
+    pLine.appendChild(row1);
 }
 
 function addActionTD(pLine) {
+    // create row
+    const row1= document.createElement("td");
 
+    // create hrefs
+    const a1= document.createElement("a");
+    const a2= document.createElement("a");    
+    a1.textContent= "Delete";
+    a2.textContent= "Update";
+    a1.href= "#";
+    a2.href= "#";
+
+    // append hrefs to row
+    row1.appendChild(a1);
+    row1.appendChild(document.createElement("br"));
+    row1.appendChild(a2);
+
+    // append row to line
+    pLine.appendChild(row1);
 }
