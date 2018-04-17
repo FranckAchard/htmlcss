@@ -44,7 +44,7 @@ function getNewDisc() {
 // function for adding a new line of disc
 function addDiscLine(pDisc) {
     // get discs table
-    const discTable= document.getElementById("table-discs");
+    const discTable= document.getElementById("table-disc");
 
     // create line
     const newLine= document.createElement("tr");
