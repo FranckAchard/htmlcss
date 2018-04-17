@@ -44,27 +44,54 @@ function getNewDisc() {
 // function for adding a new line of disc
 function addDiscLine(pDisc) {
     // get discs table
-    const table= document.getElementById("table-discs");
+    const discTable= document.getElementById("table-discs");
+
     // create line
     const newLine= document.createElement("tr");
-    // create 1st row (radio button)
+
+    // create 1st row (radio button) and append to line
     let row= document.createElement("td");
+
     newLine.appendChild(row);
-    // create 2nd row (title)
 
-    // create 3rd row (artist)
+    // create 2nd row (title) and append to line
+    addTextContentTD(pDisc.title, newLine);
+    /*row= document.createElement("td");
+    row.textContent= pDisc.title;
+    newLine.appendChild(row);*/
 
-    // create 4th row (year)
+    // create 3rd row (artist) and append to line
+    row= document.createElement("td");
+    row.textContent= pDisc.artist;
+    newLine.appendChild(row);
 
-    // create 5th row (type)
+    // create 4th row (year) and append to line
+    row= document.createElement("td");
+    row.textContent= pDisc.year;
+    newLine.appendChild(row);
 
-    // create 6th row (style)
+    // create 5th row (type) and append to line
+    row= document.createElement("td");
+    row.textContent= pDisc.type;
+    newLine.appendChild(row);
 
-    // create 7th row (rating)
-    
-    // create 8th row (action)
+    // create 6th row (style) and append to line
+    row= document.createElement("td");
+    row.textContent= pDisc.style;
+    newLine.appendChild(row);
 
+    // create 7th row (rating) and append to line
+    row= document.createElement("td");
+    row.textContent= pDisc.rating;
+    newLine.appendChild(row);
 
+    // create 8th row (action) and append to line
+    row= document.createElement("td");
+
+    newLine.appendChild(row);
+
+    // add line to table
+    discTable.appendChild(newLine);
 
     /*
  			<tr>
@@ -81,4 +108,10 @@ function addDiscLine(pDisc) {
 				<a href="#">Update</a></td>
 			</tr>
                 */
+}
+
+function addTextContentTD(pContent, pLine) {
+    let row= document.createElement("td");
+    row.textContent= pContent;
+    pLine.appendChild(row);
 }
