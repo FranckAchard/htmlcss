@@ -1,7 +1,7 @@
 // selection of button add
-const addbButton = document.getElementById("add-disc");
+const addButton = document.getElementById("add-disc-bt");
 // cancel submit
-addbButton.addEventListener("click", function(event) {
+addButton.addEventListener("click", function(event) {
     event.preventDefault();
     //const newDisc= getNewDisc();
     addDiscLine(getNewDisc());

@@ -2,9 +2,9 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<title>Discotheque</title>
-<link rel="stylesheet" href="discotheque.css">
+	<meta charset="utf-8">
+	<title>Discotheque</title>
+	<link rel="stylesheet" href="discotheque.css">
 </head>
 
 <body>
@@ -13,26 +13,28 @@
 	</header>
 	<nav>
 		<ul id="menu_inline">
-			<li><a href="#">Disc options</a></li>
-			<li><a href="#">Artist options</a></li>
-			<li><a href="#">Type options</a></li>
-			<li><a href="#">Style options</a></li>
+			<li><a href="discotheque.html">Disc options</a></li>
+			<li><a href="artist.html">Artist options</a></li>
+			<li><a href="type.html">Type options</a></li>
+			<li><a href="style.html">Style options</a></li>
 		</ul>
 	</nav>
 	<div class="add-disc">
+		<h2>Add a new disc</h2>
+
 		<form action="traitement" method="post">
 			<!-- Title field -->
 			<label for="title">Title</label>
-			<input placeholder="<Input title>" id="title" type="text" name="title">
+			<input placeholder="--Input title--" id="title" type="text" name="title">
 			<!-- Artist field -->
-			<label>Artist</label>
+			<label for="artist">Artist</label>
 			<select id="artist" name="artist">
 				<option value="" disabled selected>Choose artist</option>
 				<option value="1">Bowie, David</option>
 				<option value="2">Beatles, The</option>
 			</select>
 			<!-- Year field -->
-			<label>Year</label>
+			<label for="year">Year</label>
 			<select id="year" name="year">
 				<option value="" disabled selected>Choose year</option>
 				<option value="1">1962</option>
@@ -56,7 +58,7 @@
 				<option value="19">1980</option>
 			</select>
 			<!-- Type field -->
-			<label>Type</label>
+			<label for="type">Type</label>
 			<select id="type" name="type">
 				<option value="" disabled selected>Choose type</option>
 				<option value="1">Album</option>
@@ -65,7 +67,7 @@
 				<option value="4">Other</option>
 			</select>
 			<!-- Style field -->
-			<label>Style</label>
+			<label for="style">Style</label>
 			<select id="style" name="style">
 				<option value="" disabled selected>Choose style</option>
 				<option value="1">Blues</option>
@@ -77,7 +79,7 @@
 				<option value="7">Other</option>
 			</select>
 			<!-- Rating field -->
-			<label>Rating</label>
+			<label for="rating">Rating</label>
 			<select id="rating" name="rating">
 				<option value="" disabled selected>Choose rating</option>
 				<option value="1">1</option>
@@ -87,9 +89,8 @@
 				<option value="5">5</option>
 			</select>
 			<!-- Submit button -->
-			<button id="add-disc" class="add-button" type="submit">Add</button>
+			<button id="add-disc-bt" class="add-button" type="submit">Add</button>
 		</form>
-		<!--   <p class="add-artist">Add a new disc</p> -->
 	</div>
 	<div>
 		<table id="table-discs" class=".list-discs">
@@ -178,7 +179,7 @@
 	</div>
 	<footer>
 		<p>
-			<a href="#">About us</a> <a href="#">Contact us</a> <a href="#">Facebook</a>
+			<a href="about-us.html">About us</a> <a href="#">Contact us</a> <a href="#">Facebook</a>
 			<a href="#">Twitter</a>
 		</p>
 	</footer>

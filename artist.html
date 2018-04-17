@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Discotheque</title>
+<link rel="stylesheet" href="discotheque.css">
+</head>
+
+<body>
+	<header>
+		<h1>Franky's discotheque</h1>
+	</header>
+	<nav>
+		<ul id="menu_inline">
+			<li><a href="discotheque.html">Disc options</a></li>
+			<li><a href="artist.html">Artist options</a></li>
+			<li><a href="type.html">Type options</a></li>
+			<li><a href="style.html">Style options</a></li>
+		</ul>
+	</nav>
+	<div class="add-artist">
+		<h2>Add a new artist</h2>
+
+		<form action="traitement" method="post">
+			<!-- Artist name field -->
+			<label for="artistname">Title</label>
+			<input placeholder="--Input artist name--" id="artistname" type="text" name="artistname">
+
+			<!-- Submit button -->
+			<button id="add-artist-bt" class="add-button" type="submit">Add</button>
+		</form>
+	</div>
+	<div>
+		<table id="table-discs" class=".list-discs">
+			<tr>
+				<th></th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filtertitle">Title</label> <input placeholder="Filter"
+							id="filtertitle" type="text" name="filtertitle">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filterartist">Artist</label> <input
+							placeholder="Filter" id="filterartist" type="text"
+							name="filterartist">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filteryear">Year</label> <input placeholder="Filter"
+							id="filteryear" type="text" name="filteryear">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filtertype">Type</label> <input placeholder="Filter"
+							id="filtertype" type="text" name="filtertype">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filterstyle">Style</label> <input placeholder="Filter"
+							id="filterstyle" type="text" name="filterstyle">
+					</form>
+				</th>
+				<th>
+					<form action="traitement" method="post">
+						<label for="filterrating">Rating</label> <input
+							placeholder="Filter" id="filterrating" type="text"
+							name="filterrating">
+					</form>
+				</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td><form>
+						<INPUT type="radio" name="selectdisc" checked>
+					</form></td>
+				<td>'Heroes'</td>
+				<td>Bowie, David</td>
+				<td>1977</td>
+				<td>Album</td>
+				<td>Pop</td>
+				<td>5</td>
+				<td><a href="#">Delete</a><br />
+				<a href="#">Update</a></td>
+			</tr>
+			<tr>
+				<td><form>
+						<INPUT type="radio" name="selectdisc">
+					</form></td>
+				<td>Help!</td>
+				<td>Beatles, The</td>
+				<td>1965</td>
+				<td>Album</td>
+				<td>Pop</td>
+				<td>5</td>
+				<td><a href="#">Delete</a><br />
+				<a href="#">Update</a></td>
+			</tr>
+			<tr>
+				<td><form>
+						<INPUT type="radio" name="selectdisc">
+					</form></td>
+				<td>Presence</td>
+				<td>Led Zeppelin</td>
+				<td>1976</td>
+				<td>Album</td>
+				<td>Rock & Roll</td>
+				<td>4</td>
+				<td><a href="#">Delete</a><br />
+				<a href="#">Update</a></td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<p>
+			<a href="about-us.html">About us</a> <a href="#">Contact us</a> <a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+		</p>
+	</footer>
+	
+	<script src="script-disco.js"></script>
+	
+</body>
+
+
+</html>

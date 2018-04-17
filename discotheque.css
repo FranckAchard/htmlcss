@@ -5,14 +5,19 @@ h1, p {
 	font-weight: bold;
 }
 
+h2 {
+	text-align: left;
+	font-weight: bold;
+}
+
 header {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	background-image: url("./images/franckyvincent.jpg");
-  background-size: contain;
-  background-position: center;
-  height: 200px;
+	background-size: contain;
+	background-position: center;
+	height: 200px;
 	color: white;
 }
 
