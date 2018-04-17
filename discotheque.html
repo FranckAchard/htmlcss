@@ -22,14 +22,18 @@
 	<div class="add-disc">
 		<form action="traitement" method="post">
 			<!-- Title field -->
-			<label for="title">Title</label> <input placeholder="Low" id="title"
-				type="text" name="title">
+			<label for="title">Title</label>
+			<input placeholder="Low" id="title" type="text" name="title">
 			<!-- Artist field -->
-			<label>Artist</label> <select>
+			<label>Artist</label>
+			<select id="artist" name="artist">
 				<option value="" disabled selected>Choose artist</option>
 				<option value="1">Bowie, David</option>
 				<option value="2">Beatles, The</option>
-			</select> <label>Year</label> <select>
+			</select>
+			<!-- Year field -->
+			<label>Year</label>
+			<select id="year" name="year">
 				<option value="" disabled selected>Choose year</option>
 				<option value="1">1962</option>
 				<option value="2">1963</option>
@@ -50,13 +54,19 @@
 				<option value="17">1978</option>
 				<option value="18">1979</option>
 				<option value="19">1980</option>
-			</select> <label>Type</label> <select>
+			</select>
+			<!-- Type field -->
+			<label>Type</label>
+			<select id="type" name="type">
 				<option value="" disabled selected>Choose type</option>
 				<option value="1">Album</option>
 				<option value="2">Single & EP</option>
 				<option value="3">Compilation</option>
 				<option value="4">Oher</option>
-			</select> <label>Style</label> <select>
+			</select>
+			<!-- Style field -->
+			<label>Style</label>
+			<select id="style" name="style">
 				<option value="" disabled selected>Choose style</option>
 				<option value="1">Blues</option>
 				<option value="2">Folk</option>
@@ -65,7 +75,10 @@
 				<option value="5">Reggae</option>
 				<option value="6">Soul</option>
 				<option value="7">Other</option>
-			</select> <label>Rating</label> <select>
+			</select>
+			<!-- Rating field -->
+			<label>Rating</label>
+			<select id="rating" name="rating">
 				<option value="" disabled selected>Choose rating</option>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -74,12 +87,12 @@
 				<option value="5">5</option>
 			</select>
 			<!-- Submit button -->
-			<button class="add-button" type="submit">Add</button>
+			<button id="add-disc" class="add-button" type="submit">Add</button>
 		</form>
 		<!--   <p class="add-artist">Add a new disc</p> -->
 	</div>
 	<div>
-		<table class=".list-discs">
+		<table id="table-discs" class=".list-discs">
 			<tr>
 				<th></th>
 				<th>
